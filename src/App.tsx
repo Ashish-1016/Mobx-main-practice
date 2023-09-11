@@ -7,13 +7,8 @@ import { viewMap } from "./routerConfig/viewMap";
 import AppContextProvider from "./AppContextProvider";
 
 class App extends Component {
-  // rootStore = initRouter()
-  rootStore
-  constructor(props:any) {
-    super(props);
-    this.rootStore = initRouter();
-  }
-
+  rootStore = initRouter()
+ 
   render() {
     return (
       <AppContextProvider rootStore={this.rootStore}>
